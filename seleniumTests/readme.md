@@ -17,3 +17,4 @@
    ```
 4. Writing Your First Selenium C# Test Automation
    cs file content added in seleniumTest folder
+5. you can execute the test using the test explorer and check the test status
