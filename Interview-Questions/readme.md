@@ -1291,16 +1291,15 @@ steps :
   displayName: 'Print Hello World'
 ```
 
-###hello
-###feature-test
-
 
 ## Azure Concept questions
 
 1. hub and spoke architecture
 2. managed identity vs service pricincipal
-3. loadbalancer, traffic manager , Application gateway
-
+3. loadbalancer, traffic manager , Application gateway, Azure Front door
+4. Explain CI CD flow for the application
+5. explain IAC - (ARM )strategy deployment using Azure DevOps
+6. how to troubleshoot pipeline to get more info when pipeline failed.
 
 ## terraform
 
