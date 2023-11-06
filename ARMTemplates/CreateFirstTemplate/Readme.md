@@ -1,5 +1,7 @@
 ## First template 
 
+File name: azuredeploy.json
+
 ```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -281,10 +283,10 @@
   }
 }
 ```
+## Parameters file
+file name: azuredeploy.parameters.json
 
 ```json
-parameters file 
-
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
