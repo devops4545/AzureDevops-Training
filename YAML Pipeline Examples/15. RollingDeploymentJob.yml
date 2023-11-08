@@ -1,0 +1,30 @@
+jobs: 
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name: dev
+    resourceType: VirtualMachine
+  strategy:
+    rolling:
+      maxParallel: 5  #for percentages, mention as x%
+      preDeploy:
+        steps:
+        - download: current
+          artifact: drop
+        - script: echo initialize, cleanup, backup, install certs
+      deploy:
+        steps:
+        - script: echo routing traffic
+      routeTraffic:
+        steps:
+        - script: echo routing traffic
+      postRouteTraffic:
+        steps:
+        - script: echo health check post-route traffic
+      on:
+        failure:
+          steps:
+          - script: echo Restore from backup! This is on failure
+        success:
+          steps:
+          - script: echo Notify! This is on success

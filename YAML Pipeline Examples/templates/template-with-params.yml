@@ -1,0 +1,15 @@
+# File: templates/template-with-params.yml
+
+parameters:
+- name: name  # defaults for any parameters that aren't specified
+  default: ''
+- name: vmImage
+  default: ''
+
+jobs:
+- job: ${{ parameters.name }}
+  pool: 
+    vmImage: ${{ parameters.vmImage }}
+  steps:
+  - script: echo Hello, world!
+  displayName: 'Run a one-line script ${{ parameters.name }}'

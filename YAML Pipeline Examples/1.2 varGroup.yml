@@ -1,0 +1,16 @@
+
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+    echo $(devvar)
+    echo $(devsecret)
+  displayName: 'Run a multi-line script'

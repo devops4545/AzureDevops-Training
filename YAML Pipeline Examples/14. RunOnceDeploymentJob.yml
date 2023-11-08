@@ -1,0 +1,22 @@
+jobs:
+  # Track deployments on the environment.
+- deployment: DeployWeb
+  displayName: deploy Web App
+  pool:
+    vmImage: 'ubuntu-latest'
+  # Creates an environment if it doesn't exist.
+  environment: 'Dev'
+  strategy:
+    # Default deployment strategy, more coming...
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self 
+        - script: echo my first deployment
+#strategy:
+ #   rolling:
+  #    maxParallel: 5
+  
+#strategy:                  
+ #   canary:      
+  #    increments: [10,20]  

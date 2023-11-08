@@ -1,0 +1,13 @@
+# File: azure-pipelines.yml
+
+jobs:
+- template: templates/template-with-params.yml  # Template reference
+  parameters:
+    name: Linux
+    vmImage: 'ubuntu-latest'
+
+
+- template: templates/template-with-params.yml  # Template reference
+  parameters:
+    name: Windows
+    vmImage: 'windows-latest'

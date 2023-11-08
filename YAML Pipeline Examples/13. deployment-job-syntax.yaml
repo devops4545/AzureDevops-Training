@@ -1,0 +1,10 @@
+- deployment: string        # instead of job keyword, use deployment keyword
+  pool:
+    name: string
+    demands: string | [ string ]
+  environment: string
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo Hi!

@@ -1,0 +1,2 @@
+jobs:
+- template: templates/jobs.yml  # Template reference
