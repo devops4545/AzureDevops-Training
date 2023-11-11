@@ -45,19 +45,22 @@ Docker rm
 Docker rmi 
 
 
-docker run -ti  ubuntu /bin/bash 
+docker run -it  ubuntu /bin/bash 
 
+## Build and Push docker images
 
+Dockerfile
+```
 FROM nginx
 COPY index.html /usr/share/nginx/html
+```
 
 
+docker run --name customnginx -p 80:80 -d nginx
+docker ps 
 
-docker run --name mynginxdefault -p 80:80 -d nginx
-Docker ps 
 
-
-docker build -t stacksimplify/mynginx_image1:v1 .
+docker build -t vvhitdevops/customnginx:latest .
 
 docker build -t <your-docker-hub-id>/mynginx_image1:v1 .
 docker run --name mynginx1 -p 80:80 -d <your-docker-hub-id>/mynginx_image1:v1
@@ -65,34 +68,44 @@ docker run --name mynginx1 -p 80:80 -d <your-docker-hub-id>/mynginx_image1:v1
 
 docker tag <your-docker-hub-id>/mynginx_image1:v1 <your-docker-hub-id>/mynginx_image1:v1-release
 docker push <your-docker-hub-id>/mynginx_image1:v1-release
-  docker run -d \
+
+## docker Volume
+
+docker run -d \
   --name devtest \
   -v myvol2:/app \
   nginx:latest   docker run -it -v demo_volume:/data ubuntu:22.04
 
 
+## CMD vs Entrypoint
+
+```
 FROM ubuntu
 CMD ["echo", "Hello World"]
+```
 
 docker build -t cmd-instructions .
 
 docker run cmd-instructions
-  docker run cmd-instructions echo "message changed"
+docker run cmd-instructions echo "message changed"
 
 
 docker run cmd-instructions printenv
 
-
+```
 FROM ubuntu
 ENTRYPOINT ["echo", "Hello World"]
-
+```
 
 docker build -t entrypoint-instructions 
 docker run entrypoint-instructions
 
 Docker run entrypoint-instructions  printing   FROM ubuntu
+
+```
 ENTRYPOINT ["echo", "Hello"]
-CMD ["Abhinav"]
+CMD ["DevOps"]
+```
 
 docker build -t entrypoint-cmd .
 docker run entrypoint-cmd
