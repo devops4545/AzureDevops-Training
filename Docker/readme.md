@@ -103,6 +103,7 @@ docker run entrypoint-instructions
 Docker run entrypoint-instructions  printing   FROM ubuntu
 
 ```
+FROM ubuntu
 ENTRYPOINT ["echo", "Hello"]
 CMD ["DevOps"]
 ```
