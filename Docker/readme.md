@@ -90,7 +90,7 @@ docker run entrypoint-cmd @abhinavd26
 | docker rm container-id or name | Remove the stopped container |
 | docker rm -f container-id or name| Remove the running container forcefully |
 | docker pull image-info | Pull the image from docker hub repository |
-| docker pull stacksimplify/springboot-helloworld-rest-api:2.0.0-RELEASE | Pull the image from docker hub repository |
+| docker pull nginx:latest | Pull the image from docker hub repository |
 | docker exec -it container-name /bin/sh | Connect to linux container and execute commands in container |
 | docker rmi image-id | Remove the docker image |
 | docker logout | Logout from docker hub |
