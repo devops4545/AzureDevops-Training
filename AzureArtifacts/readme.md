@@ -5,10 +5,10 @@ Visual studio - new project - class library - name: coreservice115  # name shoul
 
 Edit class file to add below line
 
-public string Display(string value) { return "this value has core functionality"; }
+```public string Display(string value) { return "this value has core functionality"; }```
 
 Full file 
-
+```
 namespace ClassLibrary1
 {
     public class Class1
@@ -17,7 +17,7 @@ namespace ClassLibrary1
             
     }
 }
-
+```
 Build the solution once . 
 
 
