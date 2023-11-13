@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "Azureuser"
+    },
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/cfbbe549-2fbe-432c-aaf1-4126c2b5d528/resourceGroups/INDevOpsRg/providers/Microsoft.KeyVault/vaults/keyvault454"
+        },
+        "secretName": "vmAdminPassword"
+      }
+    },
+    "dnsLabelPrefix": {
+      "value": "GEN-UNIQUE"
+    }
+
+  }
+}
