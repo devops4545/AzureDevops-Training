@@ -3,6 +3,10 @@
 trigger:
 - main
 
+variables:
+- group: vargroup1
+# variable group name
+
 pool:
   vmImage: ubuntu-latest
 
