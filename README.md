@@ -136,5 +136,8 @@
   
   > **Task 30:** Expose application to access outside
 
+## Repo Activity
 
-### change from another account
+![Alt](https://repobeats.axiom.co/api/embed/39b589c55e4e2848c37e3487a130be4ef290ae13.svg "Repobeats analytics image")
+
+## Copyright & license by VVHIT
