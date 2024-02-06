@@ -126,10 +126,10 @@ ENTRYPOINT ["echo", "Hello World"]
 docker build -t entrypoint-instructions
 ```
 ```
-docker run entrypoint-instructions
+docker run entrypoint-instructions .
 ```
 ```
-Docker run entrypoint-instructions  printing   FROM ubuntu
+docker run entrypoint-instructions  printing
 ```
 
 ```
@@ -145,5 +145,5 @@ docker run entrypoint-cmd
 ```
 
 ```
-docker run entrypoint-cmd
+docker run entrypoint-cmd from VVHIT
 ```
