@@ -92,6 +92,10 @@ docker push <your-docker-hub-id>/mynginx_image1:v1-release
 docker run -d --name devtest -v myvol:/app nginx:latest   docker run -it -v demo_volume:/data ubuntu:22.04
 ```
 
+```
+docker run -d -p 8080:8080 -p 50000:50000 --name jenkins -v /Users/x/x/docker-volume:/var/jenkins_home jenkins/jenkins
+```
+
 ## CMD vs Entrypoint
 
 ```
