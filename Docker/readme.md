@@ -20,6 +20,7 @@
 | docker stats | Display a live stream of container(s) resource usage statistics |
 | docker top container-id or name | Display the running processes of a container |
 | docker version | Show the Docker version information |
+| docker inspect | show all the details |
 
 
 docker version
@@ -96,20 +97,28 @@ docker run cmd-instructions printenv
 FROM ubuntu
 ENTRYPOINT ["echo", "Hello World"]
 ```
-
-docker build -t entrypoint-instructions 
+```
+docker build -t entrypoint-instructions
+```
+```
 docker run entrypoint-instructions
-
+```
+```
 Docker run entrypoint-instructions  printing   FROM ubuntu
+```
 
 ```
 FROM ubuntu
 ENTRYPOINT ["echo", "Hello"]
 CMD ["DevOps"]
 ```
-
+```
 docker build -t entrypoint-cmd .
+```
+```
 docker run entrypoint-cmd
+```
 
-
+```
 docker run entrypoint-cmd
+```
