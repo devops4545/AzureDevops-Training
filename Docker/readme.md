@@ -22,32 +22,39 @@
 | docker version | Show the Docker version information |
 | docker inspect | show all the details |
 
-
+```
 docker version
-
-Docker pull nginx 
-
+```
+```
+docker pull nginx
+```
+```
 docker run --name mynginxdefault -p 80:80 -d nginx
-
-Docker ps 
-
-Docker ps -a 
-
-Docker ps -a -q 
-
-Docker exec -it 
-
-Docker stop 
-
-Docker start 
-
-Docker rm 
-
-Docker rmi 
-
-
+```
+```
+docker ps
+```
+```
+docker ps -a
+```
+```
+docker exec -it
+```
+```
+docker stop 
+```
+```
+docker start 
+```
+```
+docker rm 
+```
+```
+docker rmi 
+```
+```
 docker run -it  ubuntu /bin/bash 
-
+```
 ## Build and Push docker images
 
 Dockerfile
@@ -56,27 +63,34 @@ FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
 
-
+```
 docker run --name customnginx -p 80:80 -d nginx
+```
+```
 docker ps 
-
-
+```
+```
 docker build -t vvhitdevops/customnginx:latest .
-
+```
+```
 docker build -t <your-docker-hub-id>/mynginx_image1:v1 .
+```
+```
 docker run --name mynginx1 -p 80:80 -d <your-docker-hub-id>/mynginx_image1:v1
+```
 
-
+```
 docker tag <your-docker-hub-id>/mynginx_image1:v1 <your-docker-hub-id>/mynginx_image1:v1-release
+```
+```
 docker push <your-docker-hub-id>/mynginx_image1:v1-release
+```
 
 ## docker Volume
 
-docker run -d \
-  --name devtest \
-  -v myvol2:/app \
-  nginx:latest   docker run -it -v demo_volume:/data ubuntu:22.04
-
+```
+docker run -d --name devtest -v myvol:/app nginx:latest   docker run -it -v demo_volume:/data ubuntu:22.04
+```
 
 ## CMD vs Entrypoint
 
@@ -85,13 +99,20 @@ FROM ubuntu
 CMD ["echo", "Hello World"]
 ```
 
+```
 docker build -t cmd-instructions .
+```
 
+```
 docker run cmd-instructions
+```
+```
 docker run cmd-instructions echo "message changed"
+```
 
-
+```
 docker run cmd-instructions printenv
+```
 
 ```
 FROM ubuntu
