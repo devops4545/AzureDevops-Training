@@ -1,0 +1,93 @@
+What is devops lifecycle?
+Any experience in azure devops pipeline?
+How do you manage secrets and sensitive information in an azure devops pipeline?
+What is the docker component?
+What is the command to list docker images?
+Can we lose data on the docker container?
+How do we persist data outside of a container?
+Docker prune ?
+How to pull an image ?
+Docker object labels ?
+Can the container restart on its own ?
+Can we deploy cicd on docker only docker not kubernetes?
+Command to scale up applications?
+What is cgroups?
+What are the types of load balancer in azure?
+What is the application gateway?
+What is Azure load balancer health probes ?
+Have you created a custom load balancer?
+What is ingress and egress in kubernetes?
+How do pods communicate with other pods ?
+What is cni?
+Crash Loopback error ?  Troubleshooting 
+Why do we use managed kubernetes services ? 
+Any experience with helm charts ?
+Why do we use helm in kubernetes?
+What is a side car container?
+What monitoring tool have you worked on ?
+How do you set up a monitoring solution for the kubernetes cluster? Like Prometheus and grafana ?
+What is horizontal and vertical scaling?
+How do you scale up your cluster deployed on iaas using kubeadm?
+How do you add worker nodes to your kubernetes clusters?
+What deployment strategy have you implemented in your environment?
+Blue green deployment strategy?
+Canary deployment?
+Terraform best practices for cicd ?
+How do you manage secrets for terraform through pipeline ?
+How to initialize terraform?
+What is statelockfile?
+Define your cicd stages for terraform pipeline?
+You said about checkov and gitleaks can you please explain?
+What is a dynamic block ?
+If I want to call an  existing infra how do you do it ?
+Let's assume you are creating two resources using terraform but we need to make sure the  first resource creates successfully and then the second resource so is it possible?
+
+Why is terraform like a standard tool in Devops? There are already cloud based solutions like cloud formation and for azure like arm biceps so why terraform?
+
+
+
+-------------------------------------------------------------
+
+1. Explain the concept of Blue-Green Deployment. How does it work, and what benefits does it offer in a production environment?
+   
+2. Describe a situation where you had to manage a sudden spike in traffic or demand on a production system. What strategies or tools did you use to handle the increased load?
+
+3. How do you approach and implement disaster recovery and high availability in a DevOps setting? Share a specific example from your experience.
+
+4. Discuss your experience with container orchestration tools like Kubernetes. How have you used them to manage and scale containerized applications in a real-world scenario?
+
+5. In a microservices architecture, how do you handle communication between different services? What challenges have you encountered, and how did you address them in your previous projects?
+
+----------------------------------------------------------------
+
+Day to Day activities for a DevOps
+ 
+1. Make sure that the pipeline is running smoothly 
+
+ This is one of the most important task of a DevOps engineer to make sure that CI/CD pipeline is intact and fixing any issue or failure with it is the #1 priority for the day. They often need to spend time on troubleshooting, analysing and providing fixes to issues.
+
+
+2. Interaction with other teams – Co-ordination and collaboration is the key for DevOps to be successful and hence daily integration with Dev and QA team, Program management, IT is always required.
+
+
+3. Work on Automation Backlog – Automation is soul of DevOps so DevOps engineering need to plan it out and I can see DevOps engineer spending lots of time behind the keyboard working on Automating stuff on daily basis.
+
+
+4. Infrastructure Management – DevOps engineer are also responsible for maintaining and managing the infrastructure required for CI/CD pipeline and making sure that its up and running and being used optimally is also part of their daily schedule. Working on Backup, High Availability, New Platform setup etc.
+
+
+5. Dealing with Legacy stuff – Not everyone is lucky to work on latest and newest things and DevOps engineers are no exception hence they also need to spend time on legacy i.e. in terms of supporting it or migrating to the latest.
+
+
+6. Exploration – DevOps leverage a lot from the various tools which are available, there are many options as open source so team need to regularly check on this to make sure the adoptions as required, this is something which also require some effort not on daily but regular basis. What are open source options available to keep the cost at minimum?
+
+
+7. Removing bottleneck – DevOps primary purpose is identify the bottlenecks / Manual handshakes and work with everyone involved (Dev / QA and all other stakeholder) to remove them so team spend good amount of time in finding such things and build the Automation Backlog using this.
+
+8. Documentation – Though Agile / DevOps stresses less on the documentation, it is still the important one which DevOps engineer does on daily basis, Be it Server Information, Daily Week charted, Scrum / Kanban board or Simple steps to configure / backup or modify the infrastructure, you need to spent good amount of time in coming up these artifacts.
+
+
+9. Training and Self Development – Self leaning and Training is very useful in getting better understanding and many organisations encourage their employee to take the time out and do some of these and same holds true for DevOps folks as well, So learn something new everyday.
+
+
+10. Continuous Improvement as Practice – Last but not least, It’s up to the DevOps folks to build awareness on the potential of CI/CD and DevOps practices and building a culture of leveraging it for doing things better, reducing re-work, increasing the productivity and optimising the use of existing resources.
