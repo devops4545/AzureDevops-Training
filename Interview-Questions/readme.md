@@ -213,6 +213,121 @@ ignore errors by below command
 
 `git config http.sslVerify false`
 
+29. accidentally pushed a secret to remote repo, how to remove ?
+
+# Uh-Oh! Pushed Secret Keys to GitHub? Let’s Undo That. | wesionaryTEAM
+
+
+Have you ever had that heart-sinking moment when you realized you accidentally pushed sensitive secret keys to your GitHub repository? Guess what, you are not alone. I’ve been there… and not just once, but quite a few times. But the good news is that we can totally fix it without having our secrets linger in the repo’s history.
+
+Let’s understand the Oopsie first
+---------------------------------
+
+When working on projects, you might have sensitive information — say, API keys, secret tokens, or passwords. Pushing these to public repositories on platforms like GitHub can be risky as others can see and misuse them. If this has already happened, don’t panic! Let’s go step by step on how to clean up this mess and ensure it doesn’t happen again.
+
+There might be 2 cases where this oopsie might happen
+
+*   **Oops Moment: Pushed an Entire File with Secrets**
+*   **Oops Moment: Pushed An Embedded Secret Key in an Otherwise Innocent File**
+
+This was my approach when I encountered a similar hiccups.
+
+**1\. Oops Moment: Pushed an Entire File with Secrets**
+-------------------------------------------------------
+
+Say you have a file that contains your credentials or secret keys, and now you have pushed the file in Github. This is how you clear out this mess.
+
+Step 1. Wipe up the Local Mess
+------------------------------
+
+Before making changes online, it’s important to correct the mistake in your local project first. Open up your terminal and find your project’s directory. Once you’re there, locate your Git repository and do the following command.
+
+```
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch path/to/secret/file" --prune-empty --tag-name-filter cat -- --all
+```
+
+
+_Replace_ `_path/to/secret/file_` _with the location of your accidentally pushed file or key._
+
+What this command does is iterate through your commit history and remove any trace of the file or secret you specify.
+
+Step 2. Reflect the Changes on GitHub:
+--------------------------------------
+
+Now, reflect those changes onto your GitHub repository with this command.
+
+```
+git push origin main --force  # Assuming your branch is named "main"
+```
+
+
+This command will overwrite your GitHub repo’s history with your local repo’s history, ensuring the secrets are erased there too.
+
+2\. Oops Moment: Pushed An Embedded Secret Key in an Otherwise Innocent File
+----------------------------------------------------------------------------
+
+Imagine you have a file that uses a secret key and you have pushed the file in Github. You do not want to delete entire file from the git history but you want to replace the actual secret key by a dummy placeholder. This is how you get out of this situation.
+
+Step 1: Modify the File Locally
+-------------------------------
+
+Open up the file in your preferred editor and remove or replace the secret key, then save the file.
+
+Step 2: Commit the Update
+-------------------------
+
+Now, safely commit in your changes to the file in your local git history, ensuring the key is no longer in the current version of the file.
+
+```
+git add path/to/your/file
+git commit -m "Removed secret key"
+```
+
+
+_Replace_ `_path/to/your/file_` _with the location of the file you just modified._
+
+Step 3: Eradicate the Secret Key from Your Commit History
+---------------------------------------------------------
+
+After that, scan through your git history, searching for the secret key and removing its every occurrence. This ensures past commits are now without the secret.
+
+```
+git filter-branch -f --tree-filter "sed -i '' 's/YOUR_SECRET_KEY_HERE/REPLACEMENT_TEXT_OR_EMPTY/g' path/to/your/file" HEAD
+```
+
+
+_Remember to replace_ `_YOUR_SECRET_KEY_HERE_` _with the exact secret key you want to eliminate and_ `_path/to/secret/file_` _with the location of your accidentally pushed file or key._
+
+Step 4. Reflect the Changes on GitHub:
+--------------------------------------
+
+As in the previous scenario, you’ll need to update your remote repository with the changes.
+
+```
+git push origin main --force  # Assuming your branch is named "main"
+```
+
+
+With these steps, the sensitive key will no longer be present in the file — both in the current version and in past commits.
+
+
+
+
+
+
+    
+30. how to avoid this in the future ?
+    
+    Enable push protection on github secret scanning.
+
+Avoiding Future Oopsies
+-----------------------
+
+As they say, _“Prevention is better than a million facepalms”_. So, to avoid future secret key blunders, here are some of my tips.
+
+*   `**.gitignore**`**:** This file is a lifesaver. By listing file names or directories in `.gitignore`, you're telling Git to ignore them during commits.
+*   **Environment Variables:** Instead of storing secrets directly in your code, you can use environment variables. This way, your code only contains references to them, not the actual sensitive values.
+
 ## Terraform 
 
 ## terraform commands 
