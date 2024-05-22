@@ -3,6 +3,7 @@
 
 |     Commands                 |    Description                                  |
 | ------------------------------- | --------------------------------------------- |
+| docker init | Used to create Dockerfile, docker-compose files from appcode  |
 | docker ps | List all running containers |
 | docker ps -a | List all containers stopped, running |
 | docker stop container-id | Stop the container which is running |
@@ -24,6 +25,9 @@
 
 ```
 docker version
+```
+```
+docker init     # used to create dockerfile and Docker-compose files for applications
 ```
 ```
 docker pull nginx
