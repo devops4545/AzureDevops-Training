@@ -2,142 +2,141 @@
 
 ## Syllabus
 
-### Section 1
+### Section 1 🚀
 
-- DevOps Intoruduction
-- Devops Tools
-- Different practices of Devops - Agile, Scrum etc.
-- Azure devops URL walkthourgh , user creation
-- Azure Boards overview
-- Work item types  - different use case scenario
-- Queries in work items
-  
-  > **Task 1:** Create a agile Project , write a query to retrieve bugs
-  
-  > **Task 2:** integrate github with Azure boards, fix an issue from commit
-  
-- Integrate a repository with Azure Boards
-- Integrate Azure Pipelines and GitHub Actions with work item tracking tools
-- Identify appropriate metrics related to flow of work, such as cycle times, time to recovery, and lead time
-- Document a project by using tools, such as wikis and process diagrams
-- Custom dashboards in Azure Boards
+- 🌟 DevOps Introduction
+- 🛠️ DevOps Tools
+- 🔄 Different practices of DevOps - Agile, Scrum, etc.
+- 🌐 Azure DevOps URL walkthrough, user creation
+- 📋 Azure Boards overview
+- 🔍 Work item types - different use case scenarios
+- 📝 Queries in work items
 
-    
-  > **Task 3:** Configure dashboard and add all chart type
+  > **Task 1:** 🐞 Create an Agile Project, write a query to retrieve bugs
+  
+  > **Task 2:** 🔄 Integrate GitHub with Azure Boards, fix an issue from commit
 
-  > **Task 4:** Assign work items in sprint and capacity planning
+- 🔗 Integrate a repository with Azure Boards
+- 🛠️ Integrate Azure Pipelines and GitHub Actions with work item tracking tools
+- ⏱️ Identify appropriate metrics related to the flow of work, such as cycle times, time to recovery, and lead time
+- 📚 Document a project using tools such as wikis and process diagrams
+- 📊 Custom dashboards in Azure Boards
 
-### Section 2
+  > **Task 3:** 📈 Configure dashboard and add all chart types
 
-- Azure repos overview , git basics
-- Branching strategies for the source code - feature, relaese, trunk . 
-- Pull request workflow by using branch policies and branch protections
-  > **Task 5:** Create a repo in azure Repos and push code
-  
-  > **Task 6:** Create a new develop branch from master
+  > **Task 4:** 📅 Assign work items in sprint and capacity planning
 
-  > **Task 7:** Create and resolve conflicts in branches (learn)
+### Section 2 🧑‍💻
 
-- Different merging strategies in Azure Repos
-- Branch merging restrictions by using branch policies and branch protections
-- Configure permissions in the source control repository
-  > **Task 8:** Merge a branch using squash merge with PR
+- 📂 Azure Repos overview, Git basics
+- 🌿 Branching strategies for the source code - feature, release, trunk
+- 🔄 Pull request workflow by using branch policies and branch protections
+  
+  > **Task 5:** ⬆️ Create a repo in Azure Repos and push code
+  
+  > **Task 6:** 🌲 Create a new develop branch from master
 
-  > **Task 9:** Merge a branch using rebase with some commits ahead
-  
-  > **Task 10:** Create branch policies for main branches
-  
-  > **Task 11:** Build validation , status checks
-  
-  > **Task 12:** Add reviewers in PR , link work items at all stages  commit, pr , merge
-  
-  > **Task 13:** Lock a branch 
+  > **Task 7:** ⚔️ Create and resolve conflicts in branches (learn)
 
-### Section 3
+- 🔄 Different merging strategies in Azure Repos
+- 🚫 Branch merging restrictions by using branch policies and branch protections
+- 🔐 Configure permissions in the source control repository
+  
+  > **Task 8:** 🔄 Merge a branch using squash merge with PR
 
-- Azure Pipelines overview
-- Configure agents in pipelines, Microsoft-hosted , Self-hosted .
-- Classic pipeline creation for application Build
-- Yaml based pipeline creation for application Build
-- Integrate pipelines with external tools, including dependency scanning, security scanning, and code coverage
-- Implement quality and release gates, including security and governance
-- Integration of automated tests into pipelines
-- Azure Pipeline Environments , Deployment groups
-- Container based job configuration in pipeline
-- Deployment jobs in Azure pipelines, Runonce, Rolling, canary strategies
-- Azure Pipeline advanced configuration  - branch filter , scheduled builds 
-- Reduce build time in azure pipelines
-- Configure permissions for users in Pipelines, Service Connections.
-- Azure pipelines troubleshooting with debug
-- Reusable pipeline elements, including YAML templates, task groups, variables, and variable groups
-- Monitor pipeline health, including failure rate, duration, and flaky tests
-- Build and release pipelines in Github Actions
-- Secret management in Pipelines and github actions
+  > **Task 9:** 🔄 Merge a branch using rebase with some commits ahead
 
-  > **Task 14:** Create CI pipeline for favourite programming language - Microsoft Hosted
-  
-  > **Task 15:** Use self hosted for same CI pipeline
-  
-  > **Task 16:** Create multiple agents from single VM
-  
-  > **Task 17:** For CI , use YAML and Classic pipelines
-  
-  > **Task 17:**  Integrate SonarQube , MendBolt
-  
-  > **Task 18:**  Deploy app to Azure WebApp
-  
-  > **Task 19:** Include secrets in pipelines using key vault
-  
-  > **Task 20:** Implement CI/CD pipeline for app using Github Actions include Code scanning
+  > **Task 10:** 📜 Create branch policies for main branches
 
-### Section 4
+  > **Task 11:** ✔️ Build validation, status checks
 
-- Azure Artifacts overview
-- package management implementation that uses Azure Artifacts, GitHub Packages, NuGet, and npm
-- Implement a versioning strategy for pipeline artifacts
-- Azure Testplans overview - manual testing addon example
-- Infrastructure as a code overview
-- ARM, BICEP , TERRAFORM introduction
-- IaC strategy, including source control and automation of testing and deployment
-- Automate security and compliance scanning 
-- Automate analysis of source code by using GitHub code scanning, GitHub secrets scanning, pipeline-based scans, and SonarQube
-- Automate analysis of licensing, vulnerabilities, and versioning of open-source components by using Mend Bolt and GitHub Dependency Scanning
+  > **Task 12:** 🔗 Add reviewers in PR, link work items at all stages (commit, PR, merge)
 
-  > **Task 21:** Create ARM deployment stage with ADO pipeline
-  
-  > **Task 22:** Create resources using terraform with ADO pipeline
-  
-  > **Task 23:** Include security scanning for Resources using Code
-  
-  > **Task 24:** DependaBot, security Enablement in Github Repos
+  > **Task 13:** 🔒 Lock a branch
 
-### Section 5
+### Section 3 🛠️
 
-- Docker introduction , VM vs Containers
-- Creation of docker images : core build block
-- Manage data and working with volumes in Docker
-- Container network communication basics
-- Kubernetes introduction
-- Kubernetes pods, replicaset, deployments, services creation using imperative and declarative way
-- Integration of Azure kubernetes with Azure files, storage disks for persistent storage
-- Kubernetes cordon, taints, node affinity , corndon etc.
-- Kubernetes ingress basics
-- Working with ChatGPT for code creation for dockerfile, Kubernetes yaml files
+- 📊 Azure Pipelines overview
+- 🖥️ Configure agents in pipelines, Microsoft-hosted, Self-hosted
+- 🏗️ Classic pipeline creation for application build
+- 📄 YAML based pipeline creation for application build
+- 🔍 Integrate pipelines with external tools, including dependency scanning, security scanning, and code coverage
+- 🚪 Implement quality and release gates, including security and governance
+- 🔬 Integration of automated tests into pipelines
+- 🌍 Azure Pipeline Environments, Deployment groups
+- 🐳 Container-based job configuration in pipeline
+- 🚀 Deployment jobs in Azure Pipelines: Runonce, Rolling, Canary strategies
+- ⏳ Azure Pipeline advanced configuration - branch filter, scheduled builds
+- ⏱️ Reduce build time in Azure Pipelines
+- 🔑 Configure permissions for users in Pipelines, Service Connections
+- 🐞 Azure Pipelines troubleshooting with debug
+- ♻️ Reusable pipeline elements, including YAML templates, task groups, variables, and variable groups
+- 📈 Monitor pipeline health, including failure rate, duration, and flaky tests
+- 🚀 Build and release pipelines in GitHub Actions
+- 🔒 Secret management in Pipelines and GitHub Actions
 
-  > **Task 25:** Installation of Docker, Minikube , Docker Kubernetes extension
+  > **Task 14:** 🖥️ Create CI pipeline for favorite programming language - Microsoft Hosted
   
-  > **Task 26:** Create docker image using DockerFile
-  
-  > **Task 27:** Store container data in volumes
-  
-  > **Task 28:** Create docker image using DockerFile
-  
-  > **Task 29:** Deploy kubernetes yaml files in minikube and AKS
-  
-  > **Task 30:** Expose application to access outside
+  > **Task 15:** 🖥️ Use self-hosted for the same CI pipeline
 
-## Repo Activity
+  > **Task 16:** 🖥️ Create multiple agents from a single VM
+
+  > **Task 17:** 📝 For CI, use YAML and Classic pipelines
+
+  > **Task 18:** 🌐 Deploy app to Azure WebApp
+
+  > **Task 19:** 🔐 Include secrets in pipelines using Key Vault
+
+  > **Task 20:** 🔍 Implement CI/CD pipeline for app using GitHub Actions including Code scanning
+
+### Section 4 🔧
+
+- 📦 Azure Artifacts overview
+- 🛠️ Package management implementation that uses Azure Artifacts, GitHub Packages, NuGet, and npm
+- 🔄 Implement a versioning strategy for pipeline artifacts
+- 🧪 Azure Test Plans overview - manual testing addon example
+- 🏗️ Infrastructure as Code overview
+- 📜 ARM, BICEP, TERRAFORM introduction
+- 🔧 IaC strategy, including source control and automation of testing and deployment
+- 🔍 Automate security and compliance scanning
+- 🛡️ Automate analysis of source code by using GitHub code scanning, GitHub secrets scanning, pipeline-based scans, and SonarQube
+- 📦 Automate analysis of licensing, vulnerabilities, and versioning of open-source components by using Mend Bolt and GitHub Dependency Scanning
+
+  > **Task 21:** 🏗️ Create ARM deployment stage with ADO pipeline
+
+  > **Task 22:** 🌍 Create resources using Terraform with ADO pipeline
+
+  > **Task 23:** 🔍 Include security scanning for resources using Code
+
+  > **Task 24:** 🛡️ Dependabot, security enablement in GitHub Repos
+
+### Section 5 🐳
+
+- 🆚 Docker introduction, VM vs Containers
+- 🏗️ Creation of Docker images: core build block
+- 📦 Manage data and working with volumes in Docker
+- 🌐 Container network communication basics
+- 🐙 Kubernetes introduction
+- ⚙️ Kubernetes pods, ReplicaSet, deployments, services creation using imperative and declarative ways
+- 🔗 Integration of Azure Kubernetes with Azure files, storage disks for persistent storage
+- 🛠️ Kubernetes cordon, taints, node affinity, cordon, etc.
+- 🚪 Kubernetes ingress basics
+- 🤖 Working with ChatGPT for code creation for Dockerfile, Kubernetes YAML files
+
+  > **Task 25:** 🛠️ Installation of Docker, Minikube, Docker Kubernetes extension
+
+  > **Task 26:** 📦 Create Docker image using Dockerfile
+
+  > **Task 27:** 💾 Store container data in volumes
+
+  > **Task 28:** 📦 Create Docker image using Dockerfile
+
+  > **Task 29:** 🚀 Deploy Kubernetes YAML files in Minikube and AKS
+
+  > **Task 30:** 🌍 Expose application to access outside
+
+## Repo Activity 📊
 
 ![Alt](https://repobeats.axiom.co/api/embed/39b589c55e4e2848c37e3487a130be4ef290ae13.svg "Repobeats analytics image")
 
-## Copyright & license by VVHIT
+## Copyright & License by VVHIT 📜
