@@ -129,11 +129,11 @@
 
   > **Task 27:** 💾 Store container data in volumes
 
-  > **Task 28:** 📦 Create Docker image using Dockerfile
+  > **Task 28:** 📦 Create multi stage Docker image using Dockerfile
 
   > **Task 29:** 🚀 Deploy Kubernetes YAML files in Minikube and AKS
 
-  > **Task 30:** 🌍 Expose application to access outside
+  > **Task 30:** 🌍 Expose application to access outside using nginx ingress.
 
 ## Repo Activity 📊
 
