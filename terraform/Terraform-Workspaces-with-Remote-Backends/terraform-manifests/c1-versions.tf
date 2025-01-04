@@ -22,7 +22,8 @@ terraform {
 
 # Provider Block
 provider "azurerm" {
- features {}          
+ features {}
+ subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 
 # Random String Resource
